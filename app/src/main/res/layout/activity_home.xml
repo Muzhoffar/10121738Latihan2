@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+NIM   : 10121738
+Nama  : Rifqi Sirojul Muzhoffar
+Kelas : IF-9
+Tanggal Pengerjaan : 17/04/2023
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_editor_absoluteX="16dp"
+        app:layout_editor_absoluteY="-94dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/ic_header_profile" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_side_menu"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_notification"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/user_profile"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFF"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Rifqi Sirojul Muzhoffar"
+            android:textColor="@color/blue"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Blood Type : O"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_block"
+                android:backgroundTint="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="20dp"
+                    android:text="75"
+                    android:textColor="@color/blue"
+                    android:textSize="26dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="100"
+                    android:textColor="@color/blue"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="330"
+                    android:textColor="@color/blue"
+                    android:textSize="26dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginTop="55dp"
+                    android:text="BLOOD GIVE"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="55dp"
+                    android:text="BLOOD RECEIVED"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="55dp"
+                    android:text="THANKS"
+                    android:textSize="9dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_search_donor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="Search Donor"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp"
+                        android:text="Search donor near you"
+                        android:textColor="@color/gray"
+                        android:textSize="9dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="80dp">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_blood_needed" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="Blood Needed"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp"
+                        android:text="4 Users need blood"
+                        android:textColor="@color/gray"
+                        android:textSize="9dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="Message"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp"
+                        android:text="5 New Messages"
+                        android:textColor="@color/gray"
+                        android:textSize="9dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="80dp">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ic_donor_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:text="Donor History"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120dp"
+                        android:text="6 Gives, 2 Received"
+                        android:textColor="@color/gray"
+                        android:textSize="9dp" />
+                </RelativeLayout>
+            </GridLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

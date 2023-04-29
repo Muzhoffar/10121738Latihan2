@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+NIM   : 10121738
+Nama  : Rifqi Sirojul Muzhoffar
+Kelas : IF-9
+Tanggal Pengerjaan : 17/04/2023
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_header"
+                android:outlineSpotShadowColor="@color/gray"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_header_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_register_radio_on"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Male" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="97dp"
+                android:src="@drawable/ic_register_radio_off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="Female" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="27dp"
+                android:backgroundTint="@color/gray"
+                android:hint="Blood Type"
+                android:drawablePadding="30dp"
+                android:drawableEnd="@drawable/ic_register_dropdown"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:backgroundTint="@color/gray"
+                android:hint="Rhesus"
+                android:drawablePadding="30dp"
+                android:drawableEnd="@drawable/ic_register_dropdown"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Retype Password"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_register_radio_on" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Personal" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="75dp"
+                android:src="@drawable/ic_register_radio_off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Organization" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Job"
+            android:drawablePadding="30dp"
+            android:drawableEnd="@drawable/ic_register_dropdown"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Home Address"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Default Location"
+            android:drawableEnd="@drawable/ic_blood_needed_location"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_register_terms_on"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Agree with Terms and Conditions"/>
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/register2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/box_border2"
+            android:text="Register"
+            android:textColor="@color/blue"
+            />
+    </LinearLayout>
+</ScrollView>
